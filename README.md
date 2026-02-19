@@ -1,1 +1,1 @@
-# Proyecto-IDS
+Tienda de computación
