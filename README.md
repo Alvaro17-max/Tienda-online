@@ -1,1 +1,1 @@
-Tienda de computación
+0# Tienda de computación
