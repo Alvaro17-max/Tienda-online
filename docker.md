@@ -1,6 +1,7 @@
 # Docker
+sin la necesidad de crear entornos virtuales en la pc.
 
-## 1. clona la repo
+## 1. clona el repositorio
 > selecciona el directorio para el proyecto, depues clona el repositorio con:
 > ```bash
 > git clone https://github.com/Alvaro17-max/Tienda-online.git
@@ -15,3 +16,10 @@
 > ``` bash
 > docker run -it --rm --name tiendaOnline -p 5000:5000 -v ${pwd}:/app -w /app python:3.11-slim bash -c "pip install flask && python app.py"
 > ````
+
+## 3. acceder a la pagina
+> podes acceder a la pagina web sin la necesidad de levantar el entorno virtual
+
+# docker compose.
+> es una alternativa mejor para levantar el repositorio
+>  PROXIMAMENTE ...
