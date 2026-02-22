@@ -1,6 +1,6 @@
 <h1 align="center">Crea tú entorno virtual</h1>
 
-## Vale para el frontend
+## FRONTEND
 
 1. crea tu carpeta con:
 
@@ -64,3 +64,6 @@ if __name__ == '__main__':
 ```bash
   deactivate
 ```
+
+# BACKEND
+> similar a la anteior..
