@@ -1,5 +1,5 @@
 <h1 align="center">  
-  NOMBRE DE LA TIENDA
+  GAMER STORE
 </h1>
 
 <h2 align="center">
