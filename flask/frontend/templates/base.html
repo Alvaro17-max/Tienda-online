@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Document{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ayuda">Ayuda</a></li>
+        </ol>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>  
+        <ol>
+            <li><a href="Contact">contactos</a></li>
+            <li><a href="Acerca">nosotros</a></li>
+            <li><a href="Facebook">facebook</a></li>
+            <li><a href="Instagram">Instagram</a></li>
+        </ol>
+    </footer>
+
+</body>
+</html>
