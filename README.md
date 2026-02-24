@@ -1,10 +1,14 @@
 <h1 align="center">  
-  NOMBRE DE LA TIENDA
+  RONALV STORE
 </h1>
 
 <h2 align="center">
   Te ofrecemos computadoras, accesorios de calidad y a bajos costos.
 </h2>
+
+> [¿Como lavantar con docker?](/entorno-virtual.md)
+> 
+> [¿Como lavantar con entono virtual?](/docker.md)
 
 ## COLABORADORES
 <h2 align="center">
