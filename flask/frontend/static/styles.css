@@ -13,6 +13,7 @@
 
 body {
     background-color : var(--color-fondoClaro);
+    color: var(--color-textoClaro);
     margin: 0px;
 }
 
@@ -38,16 +39,30 @@ nav ol {
     nav ol li a {
         margin: 0;
         padding: 0;
-        color: aliceblue;
+        color: var(--color-textoClaro);
         text-decoration: none;
     }
 
+  
 /*footer*/
 
 footer {
     background-color: var(--color-fondoOscuro);
-
-
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
 }
+    footer ol {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+    }
+    footer ol li a {
+        margin: 0px;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--color-textoClaro);
+    }
 
     
