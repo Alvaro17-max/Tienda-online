@@ -16,6 +16,15 @@ sin la necesidad de crear entornos virtuales en la pc.
 > ``` bash
 > docker run -it --rm --name tiendaOnline -p 5000:5000 -v ${pwd}:/app -w /app python:3.11-slim bash -c "pip install flask && python app.py"
 > ````
+> en linux
+> ``` bash
+>  docker run -it --rm --name tiendaOnline \
+>  -p 5000:5000 \
+>  -v $PWD:/app \
+>  -w /app \
+>  python:3.11-slim \
+>  bash -c "pip install flask && python app.py"
+>  ``
 
 ## 3. acceder a la pagina
 > podes acceder a la pagina web sin la necesidad de levantar el entorno virtual
