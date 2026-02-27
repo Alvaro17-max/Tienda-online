@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for( 'static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='styles/styles.css') }}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <nav>
-        <ol>
-            <li><a href="{{ home }}">Home</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="ayuda">Ayuda</a></li>
-        </ol>
+        <div class="cabezera">
+            <h1>Mi Tienda</h1>
+            <div class="anuncio">
+                <img src="{{ url_for( 'static', filename='images/9d6b9db2dcb0526a09b89fb35d075c72.jpg') }}" alt="Logo de la tienda">
+            </div>
+        </div>
+        <div class="menu">
+            <ol>
+                <li><a href="{{ home }}">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ayuda">Ayuda</a></li>
+            </ol>
+        </div>
     </nav>
 
     {% block content %}{% endblock %}
