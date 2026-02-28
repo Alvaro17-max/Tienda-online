@@ -90,4 +90,36 @@ footer {
         color: var(--color-textoClaro);
     }
 
+/*contenido*/
+
+/*productos*/
+
+.productos {
+    background-color: var(--color-fondoOscuro);
+    display: block;
+    flex-direction: column;
+
+}
+    .productos h2 {
+        margin: 0px;
+    }
+    .productos ol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
     
+    .productos ol li {
+        list-style: none;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .productos ol li a img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
