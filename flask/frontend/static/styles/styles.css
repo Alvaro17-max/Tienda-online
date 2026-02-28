@@ -1,11 +1,13 @@
 /*paleta de colores*/
 /*generalmente para que se a mas facil cambiar la gama de colores*/
 :root{
-    --color-fondoOscuro:rgb(0, 0, 0);
-    --color-fondoClaro:rgb(31, 36, 36);
+    --color-fondoOscuro:rgb(15, 15, 15);
+    --color-fondoMedio:rgb(38, 37, 37);
+    --color-fondoClaro:rgb(108, 108, 108);
 
 
     --color-textoOscuro:rgb(0, 0, 0);
+    --color-textoMedio:rgb(255, 255, 255);
     --color-textoClaro:rgb(255, 255, 255);
 
 }
@@ -18,25 +20,51 @@ body {
 }
 
 /*Barra de navegaciones*/
+nav {
+    background-color: var(--color-fondoMedio);
+    margin: 0px;
+    padding: 0px;
+}
 
 .cabezera {
     background-color: var(--color-fondoOscuro);
     border-radius: 0px 0px 10px 10px;
+    display: block;
 }
-    .cabezera h1 {
+
+    #tituloLogin {
+        display: flex;
         margin: 0px;
         padding: 10px;
-        text-align: start;
     }
+        .titulo {
+            width: 20%;
+            margin: 0px;
+            padding: 10px;
+            text-align: start;
+        }
 
-    .anuncio {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        margin: 0px;
-        padding: 0px;
-    }
+        .login{
+            width: 80%;
+            display: block;
+            margin: 0px;
+            padding: 10px;
+            text-align: end;
+        }
+        .login a {
+            padding: 10px;
+            text-decoration: none;
+            color: var(--color-textoClaro);
+        }
+
+.anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
 
     .anuncio img {
         width: 100%;
@@ -44,29 +72,31 @@ body {
         object-fit: cover;
     }
 
-nav {
-    padding: 10px;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav ol {
-        display: block;
-        text-align: center;
-        background-color: var(--color-fondoOscuro);
-        list-style: none;
-        padding: 4px;
-        border-radius: 4px;
-    }
+    .menu ol {
+            display: flex;
+            text-align: justify;
+            list-style: none;
+            padding: 4px;
+            border-radius: 4px;
+            width: 100%;
+        }
 
-    nav ol li {
-        padding: 4px;
-        display: inline-flex;
-        flex-direction: column;
-    }
-    nav ol li a {
-        margin: 0;
-        padding: 0;
-        color: var(--color-textoClaro);
-        text-decoration: none;
-    }
+        .menu ol li {
+            padding: 4px;
+            display: inline-flex;
+            flex-direction: column;
+        }
+        .menu ol li a {
+            margin: 0;
+            padding: 0;
+            color: var(--color-textoClaro);
+            text-decoration: none;
+        }
 
   
 /*footer*/

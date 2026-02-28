@@ -9,18 +9,26 @@
 <body>
     <nav>
         <div class="cabezera">
-            <h1>Mi Tienda</h1>
-            <div class="anuncio">
-                <img src="{{ url_for( 'static', filename='images/9d6b9db2dcb0526a09b89fb35d075c72.jpg') }}" alt="Logo de la tienda">
+            <div id="tituloLogin"">
+                <div class="titulo">
+                    Mi Tienda
+                </div>
+                <div class="login">
+                    <a href="login">Iniciar sesión</a>
+                    <a href="registro">Registrarse</a>
+                </div>
             </div>
+        </div>
+        <div class="anuncio">
+            <img src="{{ url_for( 'static', filename='images/imagen.png') }}" alt="Logo de la tienda">
         </div>
         <div class="menu">
             <ol>
                 <li><a href="{{ home }}">Home</a></li>
+                <li><a href="ofertas">Ofertas</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="ayuda">Ayuda</a></li>
                 <li><a href="contactos">Contactos</a></li>
-                <li><a href="login">Login</a></li>
+                <li><a href="ayuda">Ayuda</a></li>
             </ol>   
         </div>
     </nav>
