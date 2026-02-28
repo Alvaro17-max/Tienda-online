@@ -123,3 +123,25 @@ footer {
         height: 250px;
         object-fit: cover;
     }
+
+/*ubicación*/
+    .ubicacion {
+        background-color: var(--color-fondoClaro);
+        padding: 10px;
+        border-radius: 10px;
+    }
+        .ubicacion h2 {
+            margin: 0px;
+        }
+        .ubicacion p {
+            margin: 0px;
+        }
+    #mapa {
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+        border: none;
+    }
