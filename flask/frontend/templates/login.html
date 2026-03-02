@@ -1,8 +1,8 @@
 {% extends "base.html" %}
     {% block title %}Login{% endblock %}
     {% block content %}
-    <section>
-        <div class="login-form">
+    <section id="login">
+        <div class="loginForm">
             <h2>Iniciar sesión</h2>
             <form action="/login" method="post">
                 <label for="username">Usuario:</label>
@@ -14,4 +14,5 @@
                 <button type="submit">Ingresar</button>
             </form>
         </div>
+    </section>
     {% endblock %}

@@ -209,3 +209,37 @@ footer {
                 border: none;
                 border-radius: 4px;
             }
+
+/*login*/
+#login {
+    display: flex;
+    justify-content: center;
+}
+    .loginForm {
+        background-color: var(--color-fondoOscuro);
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        width: 600px;
+        border-radius: 10px;
+    }
+        .loginForm h2 {
+            margin: 0px;
+        }
+        .loginForm form {
+            display: block;
+            flex-direction: column;
+            padding: 10px;
+        }
+            .loginForm form label {
+                display: block;
+                margin: 10px 0px 5px 0px;
+            }
+            .loginForm form input {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: none;
+                border-radius: 4px;
+            }
