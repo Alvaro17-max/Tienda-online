@@ -6,7 +6,6 @@
 
 <section>
     <div>
-        <h1>RONALV</h1>
         <h2>Visitanos y encontrá la tecnologia que se adapta a tu vida</h2>
         <p>Somos una tienda especializada en celulares, laptops y accesoros electronicos, ofreciendo productos originales, garantía oficial y acesoramiento personalizado.</p>
     </div>
@@ -35,14 +34,24 @@
             <li><a href=""><img src="{{url_for('static', filename='images/imagen.png')}}" alt=""></a></li>
         </ol>
     </div>
+</section>
+
+<section>    
     <div class="ubicacion">
         <h2>Ubicacion</h2>
         <p>Estamos ubicados en la calle 123, Ciudad, País. Nuestro horario de atención es de lunes a viernes de 9:00 a 18:00 y sábados de 10:00 a 14:00.</p>    
         <div id="mapa"> 
             <img src="{{url_for('static', filename='images/imagen.png')}}" alt="Mapa de ubicación">
         </div>
-
     </div>
-</section>    
+</section>
+
+<section>
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Puedes llamarnos al +123 456 7890 o enviarnos un correo electrónico a
+    </div>
+</section>
+
 
 {% endblock %}
