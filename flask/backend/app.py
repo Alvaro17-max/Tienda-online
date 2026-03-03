@@ -16,10 +16,14 @@ dbDatos ={
 def registrar_usuario():
 
     nombre = request.form.get('nombre')
+    dni = request.form.get('dni')
     apellido = request.form.get('apellido')
     email = request.form.get('email')
     contrasena = request.form.get('password') 
-
+     
+    if not all([nombre, dni, apellido, email, contrasena]):
+        return jsonify({'error': 'Todos los campos son obligatorios'}), 400
+    
     try:
         conexion = mysql.connector.connect(**dbDatos)
         cursor = conexion.cursor()
@@ -30,8 +34,8 @@ def registrar_usuario():
         return jsonify({'error': 'No se pudo conectar a la base de datos'}), 500
 
     try:
-        sql = "INSERT INTO usuario (nombre, apellido, email, contrasena) VALUES (%s, %s, %s, %s)"
-        cursor.execute(sql, (nombre, apellido, email, contrasena))
+        sql = "INSERT INTO usuario (nombre, dni, apellido, email, contrasena) VALUES (%s, %s, %s, %s, %s)"
+        cursor.execute(sql, (nombre, dni, apellido, email, contrasena))
         conexion.commit()
     except mysql.connector.Error as e:
         print("Error al insertar en MySQL:", e)
