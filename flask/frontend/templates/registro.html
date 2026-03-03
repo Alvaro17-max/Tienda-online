@@ -6,7 +6,10 @@
     <section class="registro">
         <div class="registroForm">
             <h2>Registro de usuario</h2>
-            <form action="/registro" method="post">
+            <form action="http://localhost:5001/api/registrar" method="POST">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="Escribe tu DNI" required>
+
                 <label for="nombre">Nombre(s):</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
