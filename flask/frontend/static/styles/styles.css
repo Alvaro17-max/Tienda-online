@@ -12,7 +12,6 @@
 
 }
 
-
 body {
     background-color : var(--color-fondoClaro);
     color: var(--color-textoOscuro);
@@ -122,6 +121,25 @@ footer {
     }
 
 /*contenido*/
+.perfil_de_tienda {
+    background-image: url('../images/perfil_tienda.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 900px;
+}
+    .descripcion_de_tienda {
+        background-color: rgba(0, 0, 0, 0.345);
+        color: var(--color-textoClaro);
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        width: 700px;
+        border-radius: 10px;
+    }
+
 
 /*productos*/
 .productos {
