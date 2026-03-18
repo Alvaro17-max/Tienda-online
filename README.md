@@ -6,9 +6,9 @@
   proyecto de simulación de una tienda de productos tecnologicos
 </h2>
 
-> [¿Como lavantar con docker?](/herramientas/levantar_el_proyecto/entorno-virtual.md)
+> [¿Como lavantar con docker?](/herramientas/levantar_proyecto/entorno-virtual.md)
 > 
-> [¿Como lavantar con entono virtual?](/herramientas/levantar_el_proyecto/docker.md)
+> [¿Como lavantar con entono virtual?](/herramientas/levantar_proyecto/docker.md)
 
 ## COLABORADORES
 <h2 align="center">
