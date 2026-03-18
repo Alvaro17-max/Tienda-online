@@ -1,9 +1,9 @@
 <h1 align="center">  
-  RONALV STORE
+  Tienda online HUB
 </h1>
 
 <h2 align="center">
-  Te ofrecemos computadoras, accesorios de calidad y a bajos costos.
+  proyecto de simulación de una tienda de productos tecnologicos
 </h2>
 
 > [¿Como lavantar con docker?](/entorno-virtual.md)
