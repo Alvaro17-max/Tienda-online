@@ -251,7 +251,7 @@ footer {
     margin: 50px;
 }
     .registroForm {
-        background-color: var(--color-fondoOscuro);
+        background-color: rgba(0, 0, 0, 0.401);
         display: block;
         flex-direction: column;
         padding: 10px;
@@ -288,6 +288,24 @@ footer {
                 color: var(--color-textoClaro);
                 font-size: inherit;
                 cursor: pointer;
+            }
+            .registroForm form button:hover {
+                background-color: var(--color-fondoOscuro);
+            }
+            .cancelar {
+                margin: 20px 0px 0px 10px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: rgba(206, 72, 72, 0.398);
+                color: var(--color-textoClaro);
+                font-size: inherit;
+                cursor: pointer;
+                text-decoration: none;
+
+            }
+            .cancelar:hover {
+                background-color: rgba(206, 72, 72, 0.698);
             }
 
 /*login*/
