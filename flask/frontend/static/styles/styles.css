@@ -3,7 +3,7 @@
 :root{
     --color-fondoOscuro:rgb(15, 15, 15);
     --color-fondoMedio:rgb(38, 37, 37);
-    --color-fondoClaro:rgb(108, 108, 108);
+    --color-fondoClaro:rgb(255, 255, 255);
 
 
     --color-textoOscuro:rgb(0, 0, 0);
@@ -15,20 +15,21 @@
 
 body {
     background-color : var(--color-fondoClaro);
-    color: var(--color-textoClaro);
+    color: var(--color-textoOscuro);
     margin: 0px;
 }
 
 /*Barra de navegaciones*/
 nav {
     background-color: var(--color-fondoOscuro);
+    color: var(--color-textoClaro);
     margin: 0px;
     padding: 0px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cabezera {
-    border-radius: 0px 0px 10px 10px;
+
     display: block;
 }
 
@@ -42,8 +43,9 @@ nav {
             font-size: x-large;
             width: 30%;
             margin: 0px;
-            padding: 10px;
-            text-align: start;
+            padding: 0px 0px;
+            text-align: end;
+            align-content: center;
         }
 
         .login{
@@ -56,19 +58,20 @@ nav {
             align-items: center;
         }
         
-        .login a:hover {
-            background-color: var(--color-fondoMedio);
-            border-radius: 4px;
-            text-shadow: 0px 0px 2px var(--color-textoClaro);
-        }
-
         .login a {
             padding: 10px;
             text-decoration: none;
             color: var(--color-textoClaro);
         }
+        
+        .login a:hover {
+            background-color: var(--color-fondoMedio);
+            border-radius: 10px;
+            text-shadow: 0px 0px 2px var(--color-textoClaro);
+        }
 
 .menu {
+    padding: 6px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,14 +82,16 @@ nav {
             flex-direction: row;
             justify-content: space-around;
             margin: 0px;
-            padding: 0px 10px;
+            padding: 0px;
             width: 50%;
             max-width: 50%;
         }
-
+        
         .menu ol li {
-            padding: 4px;
+            padding: 4px 22px;
             display: flex;
+            border: 1px solid transparent;
+            border-radius: 7px;
         }
         .menu ol li a {
             margin: 0;
@@ -94,8 +99,10 @@ nav {
             color: var(--color-textoClaro);
             text-decoration: none;
         }
-        .menu ol li a:hover {
-            text-shadow: 0px 0px 2px var(--color-textoClaro);
+        .menu ol li:hover {
+            color: aliceblue;
+            border-color: aliceblue;
+            background-color: slategrey;
         }
 
   
