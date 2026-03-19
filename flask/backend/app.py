@@ -1,16 +1,7 @@
 from flask import Flask, jsonify, request
-import mysql.connector
+from base_datos.conexion import conectar_mysql
 
 app = Flask(__name__)  
-
-#crear conexion a la base de datos MySQL
-dbDatos ={
-    "host": "db",
-    "user": "root",
-    "password": "mysql",
-    "database": "tiendaOnline",
-    "port": 3306
-}
 
 @app.route('/api/registrar', methods=['POST'])
 def registrar_usuario():
@@ -24,19 +15,12 @@ def registrar_usuario():
     if not all([nombre, dni, apellido, email, contrasena]):
         return jsonify({'error': 'Todos los campos son obligatorios'}), 400
     
+    conexion, cursor = conectar_mysql()
     try:
-        conexion = mysql.connector.connect(**dbDatos)
-        cursor = conexion.cursor()
-        print("Conexión a MySQL exitosa")
-        
-    except mysql.connector.Error as e:
-        print("Error al conectar a MySQL:", e)
-        return jsonify({'error': 'No se pudo conectar a la base de datos'}), 500
-
-    try:
-        sql = "INSERT INTO usuario (nombre, dni, apellido, email, contrasena) VALUES (%s, %s, %s, %s, %s)"
-        cursor.execute(sql, (nombre, dni, apellido, email, contrasena))
+        nuevos_datos = "INSERT INTO usuario (nombre, dni, apellido, email, contrasena) VALUES (%s, %s, %s, %s, %s)"
+        cursor.execute(nuevos_datos, (nombre, dni, apellido, email, contrasena))
         conexion.commit()
+        
     except mysql.connector.Error as e:
         print("Error al insertar en MySQL:", e)
         return jsonify({'error': 'No se pudo registrar el usuario'}), 500
