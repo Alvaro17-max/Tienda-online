@@ -5,12 +5,16 @@
 ``` bash
 git clone https://github.com/Alvaro17-max/Tienda-online.git
 ```
-## 2. levantar el entorno virtual
+## 2. levantar la base datos
 
-[levantar el frontend](/herramientas/levantar_proyecto/entorno_virtual_front.md)
+[como crear base de datos](/herramientas/levantar_proyecto/base_de_datos)
 
-[levantar el backend](/herramientas/levantar_proyecto/entorno_virtual_back.md)
+## 3. levantar el entorno virtual
+![imagen](/herramientas/images/directorio_frontend.png)
 
-## 3. levantar la base datos
+> deberás ubicarte en el respectivo directorio ([levantar el frontend](/herramientas/levantar_proyecto/entorno_virtual_front.md))
 
-[como crear base de datos](/herramientas/levantar_el_proyecto/base_datos)
+![imagen](/herramientas/images/directorio_backend.png)
+
+> deberás ubicarte en el respectivo directorio ([levantar el backend](/herramientas/levantar_proyecto/entorno_virtual_back.md))
+
