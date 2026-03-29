@@ -13,9 +13,25 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color : var(--color-fondoClaro);
-    color: var(--color-textoOscuro);
-    margin: 0px;
+    margin: 0;
+    font-size:14px;
+}
+
+/* tablet */
+@media(min-width: 768px){
+    body {
+        font-size: 16px;
+    }
+
+}
+
+/* desktop */
+@media(min-width: 1024px){
+    body {
+        font-size: 20px;
+    }
 }
 
 /*Barra de navegaciones*/
@@ -24,6 +40,8 @@ nav {
     color: var(--color-textoClaro);
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 120px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -37,7 +55,7 @@ nav {
     }
         .titulo {
             font-family: 'Courier New', Courier, monospace;
-            font-size: x-large;
+            font-size: large;
             width: 30%;
             margin: 0px;
             padding: 0px 0px;
@@ -78,10 +96,9 @@ nav {
             margin: 0px;
             padding: 0px;
             width: 50%;
-            max-width: 50%;
         }
         .menu ol li {
-            padding: 4px 22px;
+            padding: 5px;
             display: flex;
             border: 1px solid transparent;
             border-radius: 7px;
@@ -100,7 +117,6 @@ nav {
 
   
 /*footer*/
-
 footer {
     background-color: var(--color-fondoOscuro);
     border-radius: 10px 10px 0px 0px;
@@ -120,65 +136,66 @@ footer {
         color: var(--color-textoClaro);
     }
 
-/*contenido*/
-.perfil_de_tienda {
-    background-image: url('../images/perfil_tienda.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 100%;
-    height: 900px;
-}
-    .descripcion_de_tienda {
-        background-color: rgba(0, 0, 0, 0.345);
-        color: var(--color-textoClaro);
-        flex-direction: column;
-        padding: 10px;
-        margin: 20px;
-        width: 700px;
-        border-radius: 10px;
-    }
-
-
+/*ofertas*/
+.ofertas {
+    display: block;
+    padding: 0px 20px;
+    }   
+        .fertas h2 {
+            margin: 0px;
+        }
+        .ofertas_grid {
+            display: grid;
+            grid-template-columns: 60% 38%;
+            gap: 10px;
+        }
+            .oferta_principal {
+                background-color: rgba(17, 16, 16, 0.178);
+                color: var(--color-fondoClaro);
+                display: block;
+                flex-direction: column;
+                padding: 20px;
+                border-radius: 10px;
+            }
+                #op{
+                    background-image: url('../images/productos/lenovo_thinkpad.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                }
+                #os{
+                    background-image: url('../images/productos/Samsung_GalaxyTabS7_Plus.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
 /*productos*/
+
 .productos {
     background-color: var(--color-fondoClaro);
     display: block;
-    flex-direction: column;
-}
-    .productos h2 {
-        margin: 0px;
-    }
-    .productos ol {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    .productos ol li {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid rgba(0, 0, 0, 0.519);
-        border-radius: 10px;
-        list-style: none;
-        margin: 10px;
-    }
+    padding: 0px 20px;
+        
+}   
+    #productos_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+} 
+        .productos h2 {
+            margin: 20px 0px;
+        }
         .cuadro_del_producto {
-            background-color: rgba(0, 0, 0, 0.12);
+            background-color: rgba(0, 0, 0, 0.07);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px 0px;
+            padding: 8px 0px;
+            border-radius: 5px;
         }
             .imagen_del_producto {
+                display: flex;
                 width: 100%;
                 border-radius: 4px;
-                display: flex;
             }
             .imagen_del_producto a {
                 display: flex;
@@ -188,7 +205,7 @@ footer {
             }
             .imagen_del_producto img {
                 border-radius: 4px;
-                height: 200px;
+                height: 150px;
                 width: 85%;
                 object-fit: cover;
             }
@@ -199,13 +216,16 @@ footer {
                 width: 100%;
                 text-align: center;
             }
+            .descripcion_del_producto p{
+                margin: 4px 0px
+            }
                 .ver_comprar {
                     width: auto;
                 }
                     .ver, .comprar {
                         display: inline-block;
-                        margin: 10px;
-                        padding: 8px 12px;
+                        margin: 2px;
+                        padding: 4px 8px;
                         border: none;
                         border-radius: 4px;
                         background-color: rgba(0, 0, 0, 0.398);
@@ -225,24 +245,18 @@ footer {
 /*ubicación*/
     .ubicacion {
         background-color: var(--color-fondoClaro);
-        padding: 10px;
-        border-radius: 10px;
     }
         .ubicacion h2 {
-            margin: 0px;
+            margin: 20px;
         }
         .ubicacion p {
             margin: 0px;
         }
-    #mapa {
-        margin: 20px 0px 0px 0px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        height: 70%;
-        border: none;
-    }
+        .ubicacion img {
+            width: 90%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
 
 /*registro*/
 .registro{

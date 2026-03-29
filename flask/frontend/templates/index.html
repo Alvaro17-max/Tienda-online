@@ -4,222 +4,113 @@
 
 {% block content %}
 
-<section class="perfil_de_tienda">
-    <div class="descripcion_de_tienda">
-        <h1>Bienvenidos a nuestra tienda de tecnologia</h1>
-        <p>En nuestra tienda de tecnologia, nos apasiona ofrecerte lo mejor en celulares, laptops y accesorios electronicos. Nuestro compromiso es brindarte productos de alta calidad, con garantía oficial y un servicio al cliente excepcional. Ya sea que estés buscando el último modelo de smartphone, una laptop potente para tus necesidades diarias o accesorios innovadores para complementar tu experiencia tecnologica, estamos aqui para ayudarte a encontrar lo que necesitas. Visitanos y descubre la tecnologia que se adapta a tu vida.</p>
-    </div>
-</section>
-<section>
-    <div class="productos">
-        <h2>Portatiles</h2>
-        <ol>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>SAMSUNG BOOK</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>AZUS ZENBOOK</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>MAC BOOK</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>DELL</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ol>
-    
-        <h2>Accesorios</h2>
-        <ol>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>AURICULARES</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>TECLADOS</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>CARGADORES</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>PROTECTORES</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ol>
 
-        <h2>Celulares</h2>
-        <ol>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>SAMSUNG S</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>IPHONE</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>MOTOROLA</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cuadro_del_producto">
-                    <div class="imagen_del_producto">
-                        <a href=""><img src="{{url_for('static', filename='images/celular_x.png')}}" alt=""></a>
-                    </div>
-                    <div class="descripcion_del_producto">
-                        <p>XIAOMI</p>
-                        <p>Precio: $999.99</p>
-                        <div class="ver_comprar">
-                            <a class="ver" href="">ver</a>
-                            <a class="comprar" href="">comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ol>
+<section>
+    <div class="ofertas">
+        <h2>Ofertas del día</h2>
+        <div class="ofertas_grid">
+            <div id="op" class="oferta_principal">
+                <h1>Lenovo Thinkpad</h1>
+                <p>Computadora portátil de alto rendimiento</p>
+            </div>
+            <div id="os" class="oferta_principal">
+                <h1>Oferta especial 40% descuento</h1>
+                <p>Computadora portátil de alto rendimiento</p>
+            </div>
+        </div>
     </div>
+
+    <div class="productos">
+        <h2>Popular</h2>
+        <div id="productos_grid">
+            <div class="cuadro_del_producto">
+                <div class="imagen_del_producto">
+                    <a href=""><img src="{{url_for('static', filename='images/productos/samsung_book.jpg')}}" alt=""></a>
+                </div>
+                <div class="descripcion_del_producto">
+                    <p>SAMSUNG BOOK</p>
+                    <p>$999.99</p>
+                    <div class="ver_comprar">
+                        <a class="ver" href="">ver</a>
+                        <a class="comprar" href="">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_del_producto">
+                <div class="imagen_del_producto">
+                    <a href=""><img src="{{url_for('static', filename='images/productos/AsusZenBook.JPG')}}" alt=""></a>
+                </div>
+                <div class="descripcion_del_producto">
+                    <p>AZUS ZENBOOK</p>
+                    <p>$999.99</p>
+                    <div class="ver_comprar">
+                        <a class="ver" href="">ver</a>
+                        <a class="comprar" href="">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_del_producto">
+                <div class="imagen_del_producto">
+                    <a href=""><img src="{{url_for('static', filename='images/productos/macbook.jpg')}}" alt=""></a>
+                </div>
+                <div class="descripcion_del_producto">
+                    <p>MAC BOOK</p>
+                    <p>$999.99</p>
+                    <div class="ver_comprar">
+                        <a class="ver" href="">ver</a>
+                        <a class="comprar" href="">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_del_producto">
+                <div class="imagen_del_producto">
+                    <a href=""><img src="{{url_for('static', filename='images/productos/teclado_gamer.jpeg')}}" alt=""></a>
+                </div>
+                <div class="descripcion_del_producto">
+                    <p>Teclado Gamer</p>
+                    <p>$999.99</p>
+                    <div class="ver_comprar">
+                        <a class="ver" href="">ver</a>
+                        <a class="comprar" href="">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_del_producto">
+                <div class="imagen_del_producto">
+                    <a href=""><img src="{{url_for('static', filename='images/productos/audifono_gamer.jpg')}}" alt=""></a>
+                </div>
+                <div class="descripcion_del_producto">
+                    <p>AURICULARES</p>
+                    <p>$999.99</p>
+                    <div class="ver_comprar">
+                        <a class="ver" href="">ver</a>
+                        <a class="comprar" href="">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro_del_producto">
+                <div class="imagen_del_producto">
+                    <a href=""><img src="{{url_for('static', filename='images/productos/tecladopad.jpeg')}}" alt=""></a>
+                </div>
+                <div class="descripcion_del_producto">
+                    <p>TECLADOS</p>
+                    <p>$999.99</p>
+                    <div class="ver_comprar">
+                        <a class="ver" href="">ver</a>
+                        <a class="comprar" href="">comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
 </section>
 
 <section>    
     <div class="ubicacion">
         <h2>Ubicacion</h2>
-        <p>Estamos ubicados en la calle 123, Ciudad, País. Nuestro horario de atención es de lunes a viernes de 9:00 a 18:00 y sábados de 10:00 a 14:00.</p>    
         <div id="mapa"> 
             <img src="{{url_for('static', filename='images/imagen.png')}}" alt="Mapa de ubicación">
         </div>
-    </div>
-</section>
-
-<section>
-    <div class="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Puedes llamarnos al +123 456 7890 o enviarnos un correo electrónico a
     </div>
 </section>
 
