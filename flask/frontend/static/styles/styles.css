@@ -105,22 +105,64 @@ nav {
 /*footer*/
 footer {
     background-color: var(--color-fondoOscuro);
+    color: var(--color-textoClaro);
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
 }
-    footer ol {
-        padding: 0px;
-        list-style: none;
+    .footer_grid {
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .footer_home {
+        display: block;
+        flex-direction: column;
+    }
+        .footer_home h3 {
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer_home p {
+            margin: 5px 0px;
+            padding: 0px;
+        }
+        #iconos {
+            display: flex;
+            margin: 15px;
+            flex-direction: row;
+            gap: 20px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #iconos a {
+            color: var(--color-textoClaro);
+            text-decoration: none;   
+        }
+        #iconos img{   
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        
+    .footer_item {
         display: flex;
-        justify-content: center;
-
+        flex-direction: column;
+        align-items: center;
     }
-    footer ol li a {
-        margin: 0px;
-        padding: 10px;
-        text-decoration: none;
-        color: var(--color-textoClaro);
-    }
+        .footer_item h3 {
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer_item p {
+            margin: 5px 0px;
+            padding: 0px;
+        }
+        .footer_item a {
+            color: var(--color-textoClaro);
+            text-decoration: none;
+        }
+    
 
 /*ofertas*/
 .ofertas {

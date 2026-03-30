@@ -33,12 +33,36 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer>  
-        <ol>
-            <li><a href="contactos">CONTACTANOS</a></li>
-            <li><a href="tienda">TIENDA</a></li>
-            <li><a href="redesSociales">REDES SOCIALES</a></li>
-        </ol>
+    <footer>
+        <div class="footer_grid">
+            <div class="footer_home">
+                <h3>Tienda Online HUB</h3>
+                <p>Visítanos en nuestras redes sociales</p>
+                <div id="iconos">
+                    <a href="#"> <img src="{{ url_for('static', filename='images/iconos/facebook_logo_icon.png') }}" alt="Facebook"></a>
+                    <a href="#"> <img src="{{ url_for('static', filename='images/iconos/twitter_logo_icon.png') }}" alt="Twitter"></a>
+                    <a href="#"> <img src="{{ url_for('static', filename='images/iconos/instagram_logo_icon.png') }}" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer_item">
+                <h3>Productos</h3>
+                <p><a href="">Laptops</a></p>
+                <p><a href="">Tablets</a></p>
+                <p><a href="">Smartphones</a></p>
+            </div>
+            <div class="footer_item">
+                <h3>Categorías</h3>
+                <p><a href="">Laptops</a></p>
+                <p><a href="">Tablets</a></p>
+                <p><a href="">Smartphones</a></p>
+            </div>
+            <div class="footer_item">
+                <h3>Contactanos</h3>
+                <p>+1 234 567 890</p>
+                <p>info@tiendaonline.com</p>
+                <p>Calle Falsa 123, Ciudad, País</p>
+            </div>
+        </div>  
     </footer>
 
 </body>
