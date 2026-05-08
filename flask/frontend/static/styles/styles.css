@@ -111,7 +111,7 @@ footer {
 }
     .footer_grid {
         display: grid;
-        grid-template-columns: 150px 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
     }
     .footer_home {
@@ -285,19 +285,59 @@ footer {
         
 
 /*registro*/
-.registro{
+.registro {
     display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
     justify-content: center;
-    margin: 50px;
+}   
+    .carta {
+        background-color: rgba(0, 0, 0, 0.07);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 300px;
+        padding: 10px;
+    }
+        .cart_perfil img{
+            display: flex;
+            height: 100px;
+            width: 100px;
+            justify-content: center;
+        }
+        .cart_datos {
+            display: flex;
+            width: 300px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .cart_datos p {
+            margin: 5px 0px;
+        }
+        .cart_datos h2 {
+            margin: 0px;
+        }
+
+.cuadro_formulario {
+    background-color: rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
 }
     .registroForm {
         background-color: rgba(0, 0, 0, 0.401);
-        display: block;
+        display: flex;
         flex-direction: column;
-        padding: 10px;
-        margin: 20px;
-        width: 600px;
+        width: 40vh;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
+        box-sizing: border-box;
     }
         .registroForm h2 {
             margin: 10px;
